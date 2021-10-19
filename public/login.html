@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.http://destrosoftware.com.mx/">
-	 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-   	<link href="styles.css" rel="stylesheet" type="text/css" />
-   	<title>Login DSE_13</title>
-  </head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<title>Login DSE_13</title>
+
+	</head>
+
 	<body>
-<<<<<<< Updated upstream
 		<div
 		class="header">
 		<div class="navigation_wrapper">
-			<div class="logo">DSE_13v1</div>
+			<div class="logo">DSE_13</div>
 			<div class="navigation">
 			</div>
 			</div>
@@ -75,55 +76,4 @@
 			}
 		</script>
 	</body>
-=======
-   	<div class="header"></div>
-	 	<div class="navigation_wrapper"></div>
-   	<div class="logo">DSE_13</div>
-	 	<div class="navigation"></div>
-   	<div class="page_wrapper"></div>
-   		<!--Loggin-->
-   	<div class="table_cell half"></div>
-   	<div class="content"></div> 
-	  <div class="carousel"></div>
-   <div class="carousel_item_1" id="carousel_item_1">
-      <h2>Usuario</h2>
-      <br></br>
-      <input id_usuario="GET-usuario" type="text" name"usuario" >
-      <br></br>
-      <h2>password</h2>
-      <br></br>
-	    <input id_usuario="GET-password" type="password" name"password" >
-      <br>
-      Olvide mi password
-    </div>
-    <script>
-     	//add padlock next to code input
-      var my_elem = document.getElementsByName("code");
-      my_elem[0].insertAdjacentHTML('beforebegin','<div class="code_label"><img class="image" src="images/padlock.png"></div>');
-      //handle carousel text
-      var item1 = document.getElementById("carousel_item_1");
-      var item2 = document.getElementById("carousel_item_2");
-      var x = 1;
-      setInterval(function(){
-      console.log(x);
-       if(x == 1){
-        swap_item("1");
-        }else{
-        x=0;
-        swap_item("2");
-        }
-        x++;
-        }, 6000);
-        function swap_item(element){
-	      if(element == "1"){
-          item1.style.marginLeft = "-100%";
-          item2.style.marginLeft = "0%";
-	        }else{
-	        item1.style.marginLeft = "0%";
-          item2.style.marginLeft = "-100%";
-          }
-        }
-      </script>
-  </body>
->>>>>>> Stashed changes
 </html>
