@@ -13,7 +13,7 @@ body{
  }
  
  .box {
-	width: 60px;
+	width: 50px;
 	padding: 90px;
 	display: flex;
 	justify-content: center;
