@@ -1,13 +1,19 @@
+.header{
+	border-bottom:1px solid #fff;
+	width:100%; 
+	padding:5px;
+	font-size: 15px;
+ }
+ .user{
+  display: flex;
+	justify-content: center;
+	
+ }
 a{
 	color:#fff;
 }
 a:hover{
 	color:#c8c8c8;
-}
-h2{
-	font-size:40px;
-	margin:0px;
-	font-weight: 100;
 }
 h3{
 	font-size:25px;
@@ -36,19 +42,12 @@ hr{
 	display:table;
 	width:100%;
 }
-.header{
-	border-bottom:1px solid #fff;
-	width:100%;
-	padding:10px;
-}
+
 .navigation_wrapper{
 	width:80%;
 	margin:0px auto;
 }
-.logo{
-	display: inline;
-	font-size:25px;
-}
+
 .navigation{
 	margin-left:10%;
 	display: inline;
