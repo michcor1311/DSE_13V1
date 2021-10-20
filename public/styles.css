@@ -7,8 +7,13 @@
  .user{
   display: flex;
 	justify-content: center;
-	
  }
+ input [type=submit] {
+	width: 100px;
+	border: none;
+	border-radius: 4px;
+ }
+
 a{
 	color:#fff;
 }
