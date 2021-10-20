@@ -1,3 +1,5 @@
+<?php
+
 echo ‘Conexion realizada’;
 }
 catch (PDOException $ex) {
@@ -5,12 +7,12 @@ catch (PDOException $ex) {
   exit;
 }
 /* @var $_POST type */
-$nombre= $_POST[“txtusuario”];
-$pass= $_POST[“txtusuario”];
+$nombre= $_POST[“usuario”];
+$pass= $_POST[“password”];
 /*La busqueda en la base de datos se realiza de este modo para evitar las inyecciones sql*/
-$query=(“SELECT UsuarioLog,PassLog FROM `Login` “
-    . “WHERE `UsuarioLog`='”.mysql_real_escape_string($nombre).“‘ and “
-    . “`PassLog`='”.mysql_real_escape_string($pass).“‘”);
+$query=(“SELECT usr_name,usr_pass FROM `usr` “
+    . “WHERE `usr_name`='”.mysql_real_escape_string($nombre).“‘ and “
+    . “`usr_pass`='”.mysql_real_escape_string($pass).“‘”);
 $rs= mysql_query($query);
 $row=mysql_fetch_object($rs);
 $nr = mysql_num_rows($rs);
@@ -18,6 +20,6 @@ if($nr == 1){
 echo ‘No ingreso’;
 }
 else if($nr == 0) {
-header(“Location:segundo.html”);
+header(“Location:Login.html”);
 }
 ?>
