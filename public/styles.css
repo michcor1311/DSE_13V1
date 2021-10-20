@@ -3,48 +3,49 @@ body{
 	background-size:100% 100%;
 	background-attachment:fixed;
 	color:#fff;
-	/*font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
-	/*-webkit-font-smoothing: antialiased;*/
 }
 
 .header{
 	border-bottom:1px solid #fff;
-	width:100%; 
+	max-width:100%; 
 	padding:5px;
 	font-size: 15px;
  }
  
  .box {
+	width: 60px;
 	padding: 90px;
-	display: inline-block;
-	/*display: flex;*/
-	/*justify-content: center;*/
+	display: flex;
+	justify-content: center;
  }
 
-input[type=text] {
-	padding: 5px 5px;
-	margin: 5px  5px;
+ input[type=text] {
 	display: inline-block;
+	padding: 5px 5px;
+	margin: 4px  5px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
-	}
+	box-sizing: border-box; 
+	
+ }
 
 input[type=password] {
-	padding: 5px 5px;
-	margin: 4px  0;
 	display: inline-block;
+	padding: 5px 5px;
+	margin: 4px  5px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
+	box-sizing: border-box; 
 	}
 
 
- input [type=submit] {
-	width: 100px;
+ input[type=submit] {
+	padding: 5px 5px;
+	margin: 4px  5px;
 	border: none;
-	border-radius: 9px;
+	border-radius: 4px;
 	background-color: #4CAF50;
+	cursor: pointer;
  }
 
 
