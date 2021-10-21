@@ -2,21 +2,19 @@
 <html xmlns="http://www.http://destrosoftware.com.mx/">
     <head>
 	 	  <title>Login DSE_13</title>
+      <meta charset="utf-8">
 	 	  <link rel="stylesheet" href="styles.css" type="text/css" />
     </head>
     <body>
      	<div class="header">DSE_13</div>
       <!--Loggin-->
-      <div class="box">
-        <form action=“login.php” method=“POST”>
-          <label>Usuario</label>
-         	<input type="text" id="usuario" name="usuario" placeholder="Capture Usuario..">
-          <label>Password</label>
-          <input type="password" id="password" name="password" placeholder="Capture Password..">
-          <input type="submit" value="Aceptar" />
-          <label>Olvide mi password</label>
-        </form>
-      </div>
+      <section class="login">
+        <h5>Login</h5>
+         	<input class="user" type="text" name="usuario" placeholder="Usuario">
+          <input class="user" type="password" name="contrasena" placeholder="Contraseña">
+          <input class="buttons"type="submit" value="Entrar" />
+          <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+      </section>
       <script>
       //add padlock next to code input
       var my_elem = document.getElementsByName("code");

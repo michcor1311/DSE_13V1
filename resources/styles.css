@@ -11,13 +11,12 @@ body{
 	padding:5px;
 	font-size: 15px;
  }
- 
- .box {
-	width: 50px;
-	padding: 90px;
-	display: flex;
-	justify-content: center;
- }
+
+ .login {
+	 width: 400px;
+	 height: 340;
+	 margin: auto;
+ } 
 
  input[type=text] {
 	display: inline-block;
