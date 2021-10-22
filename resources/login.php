@@ -1,39 +1,35 @@
 <?php
-$db_host="127.0.0.1";
-$db_user="root";
-$port="3306"
-$password="michcor134";
-$db_name="dse_13";
-$db_table_name="usr";
-   $db_connection = mysql_connect($db_host,$port, $db_user, $password);
+include("contactabd.php");
 
-if (!$db_connection) {
- die('No se ha podido conectar a la base de datos');
-}
-$usr = utf8_decode($_POST['usuario']);
-$pass = utf8_decode($_POST['contraseña']);
+$usuario-$_POST['usuario'];
+$contraseña-$_POST['contraseña'];
 
-$resultado=mysql_query("SELECT * FROM ".$db_table_name." WHERE usr_name = '".$usr."'", $db_connection);
+session_start();
 
-if (mysql_num_rows($resultado)>0)
-{
+$_SESSION['usuario']=$usuario;
 
-header('Location: Fail.html');
 
-} else {
 
- $insert_value = 'INSERT INTO `' . $db_name . '`.`'.$db_table_name.'` (`Nombre` , `Apellido` , `Email`) VALUES ("' . $subs_name . '", "' . $subs_last . '", "' . $subs_email . '")';
+$consulta="select usr_name from usr" ;
+$resultado=mysqli_query($con,$consulta);
 
-mysql_select_db($db_name, $db_connection);
-$retry_value = mysql_query($insert_value, $db_connection);
+$filas=mysqli_num_rows($resultado);
 
-if (!$retry_value) {
-   die('Error: ' . mysql_error());
+
+if($filas){
+
+header("login.html");
 }
 
-header('Location: Success.html');
+else{
+
+echo "Error";
+
 }
 
-mysql_close($db_connection);
+
+mysqli_free_result($resultado);
+
+
 
 ?>
